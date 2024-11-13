@@ -20,7 +20,7 @@ builder.Services.AddScoped<TokenService>();
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new() { Title = "exemploAPI", Version = "v1" });
+    c.SwaggerDoc("v1", new() { Title = "EnergiMI", Version = "v1" });
 
     // Configuração para permitir autenticação via JWT no Swagger
     c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
