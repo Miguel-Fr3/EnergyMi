@@ -1,0 +1,6 @@
+@EnergyMi_HostAddress = http://localhost:5105
+
+GET {{EnergyMi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
