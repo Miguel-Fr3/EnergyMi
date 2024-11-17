@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EnergyMi.Data;
 using EnergyMi.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EnergyMi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AlertasController : ControllerBase

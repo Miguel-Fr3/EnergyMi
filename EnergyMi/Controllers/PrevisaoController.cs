@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.ML.Data;
 using Microsoft.ML;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EnergyMi.Controllers
 {
@@ -21,7 +22,7 @@ namespace EnergyMi.Controllers
         [ColumnName("Score")]
         public float ConsumoPrevisto { get; set; }
     }
-
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class PrevisaoEnergiaController : ControllerBase

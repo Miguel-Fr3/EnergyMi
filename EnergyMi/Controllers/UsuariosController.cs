@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EnergyMi.Data;
 using EnergyMi.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EnergyMi.Controllers
 {
@@ -22,6 +23,7 @@ namespace EnergyMi.Controllers
         }
 
         // GET: api/Usuarios
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
         {
@@ -29,6 +31,7 @@ namespace EnergyMi.Controllers
         }
 
         // GET: api/Usuarios/5
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> GetUsuario(int id)
         {
@@ -44,6 +47,7 @@ namespace EnergyMi.Controllers
 
         // PUT: api/Usuarios/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
         {
@@ -85,6 +89,7 @@ namespace EnergyMi.Controllers
         }
 
         // DELETE: api/Usuarios/5
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUsuario(int id)
         {

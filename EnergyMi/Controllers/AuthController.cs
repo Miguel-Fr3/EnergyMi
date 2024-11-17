@@ -1,4 +1,5 @@
 ﻿using EnergyMi.Data;
+using EnergyMi.DTO;
 using EnergyMi.Models;
 using EnergyMi.Services;
 using Microsoft.AspNetCore.Http;
@@ -21,7 +22,7 @@ namespace EnergyMi.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] Usuario Usuario)
+        public IActionResult Login([FromBody] UsuarioDTO Usuario)
         {
             var user = _context.Usuarios
                 .FirstOrDefault(u => u.DsEmail == Usuario.DsEmail && u.DsSenha == Usuario.DsSenha);
