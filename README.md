@@ -46,7 +46,7 @@ A API utiliza um modelo treinado em ML.NET para análise e previsão. O modelo �
 
 ### Exemplo de Uso 📋
 
-Endpoint: `/PrevisaoConsumos`  
+Endpoint: `/PrevisaoEnergia`  
 Método: **POST**
 
 ```json
