@@ -55,7 +55,7 @@ Método: **POST**
   "cdAparelho": 5,
   "dsTipoAparelho": "geladeira",
   "nrWatts": 150,
-  "nrConsumoEnergia": 0.19,
+  "nrConsumoEnergia": 0,
   "nrCusto": 0.13
 }
 ```
